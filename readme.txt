@@ -20,11 +20,11 @@ This WooCommerce Product Categories Selection Widget was developed especially be
 Instructions: http://pluginforage.com/shop/products/woocommerce-product-categories-selection-widget/
 
 Features: The WooCommerce Product Categories Selection Widget allows:
-
-•Multiple installations in your sidebar
-•Custom category display for each installation
-•+- Expand and Collapse option for display. (useful multiple categories like we do with the WooCommerce Extensions categories)
-
+<ul>
+<li>Multiple installations in your sidebar</li>
+<li>Custom category display for each installation</li>
+<li>+- Expand and Collapse option for display. (useful for displaying multiple categories)</li>
+</ul>
 == Installation ==
 
 The default WooCommerce product categories widget displays all product categories. This WooCommerce Product Categories Selection Plugin allows you to choose which product categories show up in your sidebar widget. Multiple instances can be installed with different WooCommerce product categories showing in each widget installation. Also included is the ability do display the category links with a +/- Expand and Collapse category showing.
