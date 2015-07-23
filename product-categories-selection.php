@@ -60,8 +60,8 @@
 
 		function productcategories_uninstall() {
 		}
-
-		include_once($_SERVER['DOCUMENT_ROOT']. "/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-widget.php");
+		include_once(dirname(dirname(__FILE__)). "/woocommerce/includes/abstracts/abstract-wc-widget.php");
+		// include_once($_SERVER['DOCUMENT_ROOT']. "/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-widget.php");
 		include_once("class-wc-widget-product-categories2.php");
 
 		function wc_widget_product_categories2_load() {
