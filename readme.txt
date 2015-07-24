@@ -27,7 +27,14 @@ Features: The WooCommerce Product Categories Selection Widget allows:
 </ul>
 
 == Changelog ==
-7/23/15 Bug fix. When migrating website to new server the plugin caused errors that required to delete by FTP the plugin to access the site. This has been corrected.
+
+= 1.1 =
+* 7/23/15 Bug fix. When migrating website to new server the plugin caused errors that required to delete by FTP the plugin to access the site. This has been corrected.
+
+== Upgrade Notice ==
+
+= 1.1 =
+You should upgrade to preven errors that may prevent access to your site.
 
 == Installation ==
 
