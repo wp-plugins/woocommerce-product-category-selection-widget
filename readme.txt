@@ -1,4 +1,4 @@
-	=== WooCommerce Product Categories Selection Widget ===
+=== WooCommerce Product Categories Selection Widget ===
 Contributors: PluginForage.com
 Author URI: http://www.PluginForage.com
 Tags: WooCommerce, Categories, Product Categories, Widget
@@ -11,7 +11,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 WooCommerce Product Categories Selection Widget
 
 == Description ==
-WooCommerce Product Categories Selection Widget
 
 The WooCommerce Product Categories widget that comes as a default install in WooCommerce does not allow for the display of multiple product categories widgets all with unique categories displayed. This widget solves that problem.
 
