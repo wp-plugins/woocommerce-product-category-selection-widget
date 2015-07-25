@@ -3,7 +3,7 @@ Contributors: PluginForage.com
 Author URI: http://www.PluginForage.com
 Tags: WooCommerce, Categories, Product Categories, Widget
 Requires at least: 3.4.2
-Tested up to: 4.2.2
+Tested up to: 4.2.3
 Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -25,16 +25,6 @@ Features: The WooCommerce Product Categories Selection Widget allows:
 <li>Custom category display for each installation</li>
 <li>+- Expand and Collapse option for display. (useful for displaying multiple categories)</li>
 </ul>
-
-== Changelog ==
-
-= 1.1 =
-* 7/23/15 Bug fix. When migrating website to new server the plugin caused errors that required to delete by FTP the plugin to access the site. This has been corrected.
-
-== Upgrade Notice ==
-
-= 1.1 =
-You should upgrade to preven errors that may prevent access to your site.
 
 == Installation ==
 
@@ -73,3 +63,12 @@ You will see each installation of the widget by the name of the title you gave i
 
 1. Separated product categories.
 
+== Changelog ==
+
+= 1.1 =
+* 7/23/15 Bug fix. When migrating website to new server the plugin caused errors that required to delete by FTP the plugin to access the site. This has been corrected.
+
+== Upgrade Notice ==
+
+= 1.1 =
+You should upgrade to prevent errors that may prevent access to your site.
