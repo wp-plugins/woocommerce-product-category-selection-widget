@@ -69,3 +69,7 @@ After you have installed the widget(s) into the widgetized areas of your WordPre
 
 You will see each installation of the widget by the name of the title you gave it/them while setting p the display. Click on the title of the ones you want to add WooCommerce product categories too. There you will see a list of WooCommerce product categories with a check-box next to each category. Simply click the check-box of the categories you want to appear. Repeat with each installation. (Note you must have already set up some WooCommerce product categories)
 
+== Screenshots ==
+
+1. Separated product categories.
+
