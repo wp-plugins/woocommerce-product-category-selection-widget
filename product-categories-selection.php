@@ -6,7 +6,7 @@
  * Description: The default WooCommerce product categories widget displays all product categories. This WooCommerce Product Categories Selection Plugin allows you to choose which product categores show up in your sidebar widget. Multiple instances can be installed with different WooCommerce product categories showing in each widget installation. Also added is an +/- Expand and Collapse category showing.
  * Author: PluginForage.com
  * Author URI: http://pluginforage.com
- * Version: 1.1
+ * Version: 2.0
  *
  * Text Domain: Product Categories
  */
@@ -96,6 +96,56 @@
 			$save = isset($_POST['save']) ?  $_POST['save'] : '';
             $selcat = isset($_POST['selcat']) ?  $_POST['selcat'] : '';
 
+            // echo "<pre>"; print_r($r);
+
+            $qa = 'SELECT meta_value,meta_id,post_id
+			FROM ' . $wpdb->postmeta . '
+			WHERE meta_key = "panels_data" and post_id IN (SELECT ID
+				FROM ' . $wpdb->posts . '
+				WHERE post_type = "page")';
+
+				
+			
+			$res  = $wpdb->get_results($qa);
+			if($res > 0)
+			{
+			foreach($res as $data_for_delete){
+
+			$check_if_page  = $wpdb->get_row('SELECT post_type,post_status
+					FROM ' . $wpdb->posts . '
+					WHERE ID = "'.$data_for_delete->post_id.'"');
+									
+					if($check_if_page->post_type == 'revision'  || $check_if_page->post_status == 'trash'){
+						$wpdb->query('DELETE FROM ' . $wpdb->postmeta . '
+						WHERE meta_key = "panels_data"');
+					}
+			}
+			}			
+			$res  = $wpdb->get_results($qa);
+// echo "<pre>";print_r($res);
+			if($res > 0)
+			{
+				
+				
+				
+				foreach($res as $data){
+					
+					$arra = unserialize($data->meta_value);
+					
+					for($i=0;$i<count($arra);$i++){
+						$arra['widgets'][$i]['post_id']=$data->post_id;
+					}
+					 
+					foreach($arra as $ar){
+						$arr = array_merge($arr,$ar);
+						
+					}
+				}
+				 // echo "<pre>"; print_r($arr);
+			}
+			
+			
+
 			if(!$action) {
 		 	  print '<div class="wrap">';
 
@@ -110,7 +160,8 @@
 
                         if(isset($arr) && count($arr) > 0) {
 				            foreach($arr as $rec){
-				               print '<tr class="alternate"><td class="name column-name"><a href="?page=' . $_REQUEST['page'] . '&amp;action=edit&amp;id=' . str_replace(" ","_",$rec['title']). '">' . $rec['title']. '</a>
+						$link = !empty($rec['post_id'])?"&builder=builder":"";
+				               print '<tr class="alternate"><td class="name column-name"><a href="?page=' . $_REQUEST['page'] . '&amp;action=edit&amp;id=' . str_replace(" ","_",$rec['title']).$rec['post_id'].$link. '">' . $rec['title']. '</a>
 				               </td></tr>';
 							}
                          }
@@ -124,9 +175,19 @@
 			  print '</div>';
 			} else {
 
-		       if($action == 'edit') {
+				
 
+		       if($action == 'edit') {
+					if(isset($_GET['builder'])){
+					$nam = '';
+					$name = explode('_',$id); 
+					for($i=0;$i < count($name)-1;$i++ ){
+					$nam .=  $name[$i].' ';
+					}
+					print '<h3>' . $nam . '</h3>';
+					}else{
 					print '<h3>' . str_replace("_"," ",$id) . '</h3>';
+					}
 
 					print '<form action="?page=productcat" method="post">
 					<input type="hidden" name="id" value="' . $id . '">';
@@ -208,12 +269,12 @@
                 $selcat_serialize = serialize($selcat);
 
 				$qqq = "DELETE FROM " . $wpdb->prefix . "options
-				WHERE option_name = 'taxonomy_". $id . "'";
+				WHERE option_name = 'taxonomy_". $id .$post_id. "'";
 		        $wpdb->query($qqq);
 
 
 				$qqq = "INSERT INTO " . $wpdb->prefix . "options (`option_name`, `option_value`)
-				VALUES('taxonomy_". $id . "','" . $selcat_serialize . "')";
+				VALUES('taxonomy_". $id. "','" . $selcat_serialize . "')";
 		        $wpdb->query($qqq);
 			}
 	    }

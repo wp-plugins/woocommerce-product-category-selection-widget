@@ -120,11 +120,18 @@ class WC_Widget_Product_Categories2 extends WC_Widget {
                    $cats[] = $ac->term_id;
               }
         }
-
+		if(isset($instance['panels_info'])){
+			$postid = get_the_ID();
+		}else{
+			$postid = '';
+		}
+	  	// 
+	  	
+	// echo "<pre>"; print_r($instance['panels_info']); echo "</pre>";
 		//selected categories
 		$query = 'SELECT option_value
 		FROM ' . $wpdb->options . '
-		WHERE option_name LIKE "taxonomy_' . str_replace(" ", "_", $instance['title']) . '"';
+		WHERE option_name LIKE "taxonomy_' . str_replace(" ", "_", $instance['title']) .$postid. '"';
 
         $res = $wpdb->get_results($query);
 

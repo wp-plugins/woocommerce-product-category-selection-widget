@@ -1,16 +1,18 @@
-﻿=== WooCommerce Product Categories Selection Widget ===
+=== WooCommerce Product Categories Selection Widget ===
 Contributors: PluginForage.com
 Author URI: http://www.PluginForage.com
 Tags: WooCommerce, Categories, Product Categories, Widget
 Requires at least: 3.4.2
 Tested up to: 4.2.3
-Stable Tag: 1.1
+Stable Tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 WooCommerce Product Categories Selection Widget
 
 == Description ==
+
+<strong>New in 2.0</strong>: Now 100% Compatible with SiteOrigin Page Builder. Previous versions would allow you to add the widget via. Page Builder, but would use the same data from existing sidebar Product Category Selection widgets that were already installed. You can now add the widget(s) with Page Builder and create new custom product category displays for each new installation of the widget in Page Builder.
 
 The WooCommerce Product Categories widget that comes as a default install in WooCommerce does not allow for the display of multiple product categories widgets all with unique categories displayed. This widget solves that problem.
 
@@ -64,10 +66,19 @@ You will see each installation of the widget by the name of the title you gave i
 
 == Changelog ==
 
+= 2.0 =
+* 8/02/15 <strong>New in 2.0</strong>: Now 100% Compatible with SiteOrigin Page Builder. Previous versions would allow you to add the widget via. Page Builder, but would use the same data from existing sidebar Product Category Selection widgets that were already installed. You can now add the widget(s) with Page Builder and create new custom product category displays for each new installation of the widget in Page Builder.
+
+* Database tweaks. Prior versions, when deleting a widget left the data in the Product Categories Widget Area, where you add categories to the widgets. Now when you delete the widget, the data associated with that widget gets deleted too.
+
 = 1.1 =
 * 7/23/15 Bug fix. When migrating website to new server the plugin caused errors that required to delete by FTP the plugin to access the site. This has been corrected.
 
 == Upgrade Notice ==
+
+= 2.0 =
+Adds new functionality with SiteOrigin Page Builder
+Database tweaks to clear data of deleted widgets
 
 = 1.1 =
 You should upgrade to prevent errors that may prevent access to your site.
