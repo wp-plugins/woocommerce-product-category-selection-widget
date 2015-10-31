@@ -2,10 +2,10 @@
 /**
  * Plugin Name: WooCommerce Product Categories Selection
  * Plugin Script: product-categories-selection.php
- * Plugin URI: http://pluginforage.com/shop/products/woocommerce-product-categories-selection-widget/
+ * Plugin URI: https://pluginforage.com/shop/products/woocommerce-product-categories-selection-widget/
  * Description: The default WooCommerce product categories widget displays all product categories. This WooCommerce Product Categories Selection Plugin allows you to choose which product categores show up in your sidebar widget. Multiple instances can be installed with different WooCommerce product categories showing in each widget installation. Also added is an +/- Expand and Collapse category showing.
  * Author: PluginForage.com
- * Author URI: http://pluginforage.com
+ * Author URI: https://pluginforage.com
  * Version: 2.0
  *
  * Text Domain: Product Categories
@@ -168,7 +168,7 @@
 					print '</tbody>
 					</table>
 					<div style="float:right;margin-right:15%;">
-						<a href="http://pluginforage.com/goto/pluginforage" target="_blank"><img src="' .  plugins_url( '/', __FILE__ )  . 'assets/images/PluginForage-ad.png" />
+						<a href="https://pluginforage.com/100.html" target="_blank"><img src="' .  plugins_url( '/', __FILE__ )  . 'assets/images/PluginForage-ad.png" />
 					</div>
 					';
 
