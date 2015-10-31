@@ -168,7 +168,7 @@
 					print '</tbody>
 					</table>
 					<div style="float:right;margin-right:15%;">
-						<a href="http://pluginforage.com/goto/pluginforage" target="_blank"><img src="' .  plugins_url( '/', __FILE__ )  . 'assets/images/PluginForage-ad.png" />
+						<a href="https://pluginforage.com/100.html" target="_blank"><img src="' .  plugins_url( '/', __FILE__ )  . 'assets/images/PluginForage-ad.png" />
 					</div>
 					';
 
