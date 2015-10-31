@@ -1,6 +1,6 @@
 === WooCommerce Product Categories Selection Widget ===
 Contributors: PluginForage.com
-Author URI: http://www.PluginForage.com
+Author URI: https://pluginforage.com/100.html
 Tags: WooCommerce, Categories, Product Categories, Widget
 Requires at least: 3.4.2
 Tested up to: 4.3.1
@@ -18,7 +18,7 @@ The WooCommerce Product Categories widget that comes as a default install in Woo
 
 This WooCommerce Product Categories Selection Widget was developed especially because the standard WooCommerce Product Categories widget displays all categories with every installation. It is impossible to display ONLY the categories you want to display. The WooCommerce Product Categories Selection Widget that we built will allow you to pick and choose which product categories you want to display and allows multiple installations into your sidebar or anywhere you can use a widget showing different categories with each installation. This is especially useful if you have several categories and need to break them up.
 
-Instructions: http://pluginforage.com/shop/products/woocommerce-product-categories-selection-widget/
+Instructions: https://pluginforage.com/shop/products/woocommerce-product-categories-selection-widget/
 
 Features: The WooCommerce Product Categories Selection Widget allows:
 <ul>
