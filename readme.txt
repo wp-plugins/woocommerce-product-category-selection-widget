@@ -3,7 +3,7 @@ Contributors: PluginForage.com
 Author URI: https://pluginforage.com/100.html
 Tags: WooCommerce, Categories, Product Categories, Widget
 Requires at least: 3.4.2
-Tested up to: 4.3.1
+Tested up to: 4.4
 Stable Tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
