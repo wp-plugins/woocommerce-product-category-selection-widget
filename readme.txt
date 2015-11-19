@@ -12,6 +12,8 @@ WooCommerce Product Categories Selection Widget
 
 == Description ==
 
+<strong>Tested with WordPress 4.4 Beta. Test were successful.</strong>
+
 <strong>New in 2.0</strong>: Now 100% Compatible with SiteOrigin Page Builder. Previous versions would allow you to add the widget via. Page Builder, but would use the same data from existing sidebar Product Category Selection widgets that were already installed. You can now add the widget(s) with Page Builder and create new custom product category displays for each new installation of the widget in Page Builder.
 
 The WooCommerce Product Categories widget that comes as a default install in WooCommerce does not allow for the display of multiple product categories widgets all with unique categories displayed. This widget solves that problem.
